@@ -1,0 +1,168 @@
+/* ------------------- Cart Page Layout ------------------- */
+.cart-page {
+  margin-top: 64px;
+  padding: 0 20px;
+  background-color: #ede7f6; /* Muted pastel purple */
+}
+
+/* ------------------- Header Section ------------------- */
+.cart-page h1 {
+  padding: 15px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  background-color: rgba(137, 107, 183, 0.1); /* Transparent purple tone */
+  border-radius: 8px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #3d2a58; /* Deep muted purple text */
+  margin-bottom: 20px;
+}
+
+.cart-page h1 > p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: lighter;
+  color: #6a5d7b;
+}
+
+/* ------------------- Product Card Styling ------------------- */
+.cart-page .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  margin-top:20px;
+  margin-bottom: 12px;
+  height: 160px; /* Reduced height */
+  width: 700px;
+  background-color: #f9f6fb;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(61, 42, 88, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+}
+
+.cart-page .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(61, 42, 88, 0.15);
+}
+
+.cart-page .card img {
+  width: 70px; /* Smaller image */
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-page .card .card-details {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.cart-page .card .card-details p {
+  margin: 4px 0;
+  font-size: 0.9rem; /* Smaller font */
+  color: #4e4466;
+}
+
+/* ------------------- Remove Button ------------------- */
+.cart-page .cart-remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0d4ef;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-page .cart-remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+.cart-page .cart-remove-btn svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* ------------------- Cart Summary Section ------------------- */
+.cart-page .cart-summary {
+  margin-top: 20px;
+  background-color: #fdfbff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(61, 42, 88, 0.08);
+}
+
+.cart-page .cart-summary h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3d2a58;
+  margin-bottom: 20px;
+}
+
+.cart-page .cart-summary p {
+  font-size: 1.1rem;
+  color: #5e5270;
+  margin-bottom: 10px;
+}
+
+.cart-page .cart-summary .total {
+  font-size: 1.5rem;
+  color: #7b1fa2; /* Soft muted magenta */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ------------------- Checkout Button ------------------- */
+.cart-page .checkout-btn {
+  background-color: #7b1fa2; /* Muted violet */
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-page .checkout-btn:hover {
+  background-color: #ede7f6;
+  color: #7b1fa2;
+  transform: scale(1.05);
+}
+
+/* ------------------- Responsive Design for Cart Page ------------------- */
+@media (max-width: 768px) {
+  .cart-page h1 {
+    font-size: 2rem;
+  }
+
+  .cart-page .card {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .cart-page .cart-summary {
+    margin-top: 30px;
+    padding: 15px;
+  }
+
+  .cart-page .checkout-btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .cart-page .card img {
+    width: 80px;
+    height: 100px;
+  }
+
+  .cart-page .card .card-details {
+    padding-left: 10px;
+  }
+}
